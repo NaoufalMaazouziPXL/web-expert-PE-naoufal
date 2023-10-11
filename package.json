@@ -1,0 +1,23 @@
+{
+  "name": "web-expert-pe-naoufal",
+  "version": "1.0.0",
+  "description": "Permanente evaluatie 1 & 2 voor Web Expert 1 - Naoufal Maazouzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch scss/main.scss:css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaoufalMaazouziPXL/web-expert-PE-naoufal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaoufalMaazouziPXL/web-expert-PE-naoufal/issues"
+  },
+  "homepage": "https://github.com/NaoufalMaazouziPXL/web-expert-PE-naoufal#readme",
+  "dependencies": {
+    "sass": "^1.69.2"
+  }
+}
