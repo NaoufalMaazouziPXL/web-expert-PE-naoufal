@@ -27,6 +27,7 @@ body {
     li {
       margin-right: 40px;
       font-size: $font-sm;
+
       &:last-child {
         margin-right: 0;
       }
@@ -34,6 +35,7 @@ body {
 
     a {
       text-decoration: none;
+
       &:hover {
         color: $color-grey;
       }
@@ -47,6 +49,7 @@ body {
     font-size: $font-lg;
     color: $color-white;
   }
+
   h2 {
     text-align: center;
   }
@@ -58,6 +61,15 @@ body {
     justify-content: center;
     flex-direction: column;
   }
+  @media (max-width: 820px) {
+    justify-content: center;
+    flex-direction: column;
+    p {
+      margin: auto;
+    }
+  }
+
+
   .banner__description {
     margin: 20vh 0 0 0;
     color: $color-white;
@@ -67,9 +79,11 @@ body {
       text-align: center;
       margin: 15vh 0 0 0;
     }
+
     h2 {
       font-size: $font-sm;
     }
+
     p {
       font-size: $font-sm;
       width: 65%;
@@ -81,6 +95,7 @@ body {
 
   .spotlight__banner {
     margin: 15vh 0 0 0;
+
     .spotlight__title {
       text-align: center;
       padding-bottom: 15px;
@@ -90,11 +105,16 @@ body {
   .spotlight__mangas__cards {
     display: flex;
     @media (max-width: 768px) {
-    @include scalaViewLayout();
+      @include scalaViewLayout();
     }
+    @media (max-width: 820px) {
+      justify-content: center;
+    }
+
     div {
       margin-right: 10px;
       transition: transform 0.2s;
+
       &:hover {
         transform: scale(1.1);
       }
@@ -114,6 +134,7 @@ body {
   h2 {
     font-size: $font-md;
   }
+
   margin-bottom: 20px;
   font-size: $font-md;
 }
@@ -121,16 +142,23 @@ body {
 .manga__cards {
   display: flex;
   justify-content: space-between;
-  margin: 10vh 0 0 0;
+  margin: 2.5vh 0 0 0;
   @media (max-width: 768px) {
     @include scalaViewLayout();
   }
+}
+
+.manga__card {
+  width: 213px;
 }
 
 .item__container {
   margin-top: 15vh;
   display: flex;
   justify-content: space-around;
+  @media (max-width: 768px) {
+    @include scalaViewLayout();
+  }
 }
 
 .manga__detail_container {
@@ -145,6 +173,29 @@ body {
   }
 }
 
+.filters {
+  select {
+    @include componentSize();
+  }
+
+  label {
+    width: 50px;
+    display: inline-block;
+  }
+}
+
+.filter__container {
+  button {
+    @include buttonStyling();
+  }
+
+  h3,
+  h4,
+  label {
+    margin-bottom: 10px;
+  }
+}
+
 .button__container, .login__container {
   button {
     @include buttonStyling();
@@ -156,45 +207,65 @@ body {
   }
 }
 
-.manga__description {
+
+.manga__detail__description {
   h2 {
     padding-bottom: 20px;
   }
+
   h3 {
     padding-bottom: 20px;
   }
+
   p {
     padding-bottom: 20px;
   }
+
+  width: 75%;
   margin: auto;
   margin-bottom: 15vh;
-
 }
+
 
 .item__image {
   img {
     margin: auto;
     display: flex;
+    @media (max-width: 768px) {
+      @include scaleImage();
+    }
   }
 
 }
 
+
 .pagination {
   display: flex;
+  margin-top: 2.5vh;
+  justify-content: center;
 
   .pagination__item {
-    width: 30px; // Adjust the width as needed
-    height: 30px; // Adjust the height as needed
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
-    margin: 0 5px; // Adjust the margin for spacing
+    border: 1px solid $color-white;
+    margin: 0 5px;
     cursor: pointer;
 
     &:hover {
-      background-color: #000;
-      color: #fff;
+      background-color: $color-black;
+      color: $color-yellow;
     }
+  }
+}
+
+footer {
+  h4 {
+    font-size: $font-sxm;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
   }
 }

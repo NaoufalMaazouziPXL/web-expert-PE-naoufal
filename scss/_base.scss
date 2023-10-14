@@ -9,7 +9,7 @@ $color-darkgrey: #636363;
 $font-sf-display-pro: SF Display Pro;
 
 // Fonts size
-$font-lg: 4rem;
+$font-lg: 4em;
 $font-md: 2.5rem;
 $font-sm: 1.50rem;
 $font-sxm: 1rem;
@@ -65,10 +65,16 @@ $font-sxm: 1rem;
   display: inline-block;
 }
 
+
 @mixin componentSize() {
   width: 15rem;
 }
 
 @mixin inputStyling() {
 
+}
+
+@mixin scaleImage() {
+  max-width: 100%;
+  height: auto;
 }
