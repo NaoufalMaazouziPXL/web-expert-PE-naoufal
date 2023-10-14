@@ -4,8 +4,9 @@
   "description": "Permanente evaluatie 1 & 2 voor Web Expert 1 - Naoufal Maazouzi",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "sass --watch scss/main.scss:css/main.css"
+    "dev": "sass --watch scss/main.scss:css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "repository": {
     "type": "git",
