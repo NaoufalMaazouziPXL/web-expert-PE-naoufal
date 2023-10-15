@@ -1,6 +1,5 @@
 @use 'base' as *;
 
-
 .manga__description {
   @include mangaCardLayout();
   h5 {
@@ -8,4 +7,41 @@
   }
 }
 
+.manga__cards {
+  .manga__card {
+    width: 213px;
+  }
 
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5vh 0 0 0;
+  @media (max-width: 768px) {
+    @include scalaViewLayout();
+  }
+}
+
+.pagination {
+  display: flex;
+  margin-top: 2.5vh;
+  justify-content: center;
+
+  .pagination__item {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-white;
+    margin: 0 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-black;
+      color: $color-yellow;
+    }
+  }
+}
+
+.forum__container, .title__container {
+  @include alignToMiddle();
+}
