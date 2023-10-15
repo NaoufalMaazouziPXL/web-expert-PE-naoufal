@@ -56,3 +56,58 @@
 .forum__container, .title__container {
   @include alignToMiddle();
 }
+
+.item__container {
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 768px) {
+    @include scalaViewLayout();
+  }
+}
+
+.login__container {
+  margin-top: 25vh;
+}
+
+.forum__container {
+  input {
+    @include componentSize();
+    @include inputStyling();
+  }
+}
+
+.filters {
+  select {
+    @include componentSize();
+    @include inputStyling();
+  }
+
+  label {
+    width: 50px;
+    display: inline-block;
+  }
+}
+
+.filter__container {
+  button {
+    @include buttonStyling();
+  }
+
+  h3,
+  h4,
+  label {
+    margin-bottom: 10px;
+  }
+}
+
+.button__container, .login__container {
+  button {
+    @include buttonStyling();
+    @include componentSize();
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -129,78 +129,16 @@ body {
   transform: scale(1.1);
 }
 
-.login__container {
-  margin-top: 25vh;
-}
-
 .title__container {
   margin-bottom: 20px;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 .title__container h2 {
-  font-size: 2.5rem;
-}
-
-.item__container {
-  margin-top: 15vh;
-  display: flex;
-  justify-content: space-around;
-}
-@media (max-width: 768px) {
-  .item__container {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  font-size: 2.3rem;
 }
 
 .manga__detail_container p {
   width: 50%;
-}
-
-.forum__container input {
-  width: 15rem;
-  color: #000000;
-}
-
-.filters select {
-  width: 15rem;
-  color: #000000;
-}
-.filters label {
-  width: 50px;
-  display: inline-block;
-}
-
-.filter__container button {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  padding: 10px 20px;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-}
-.filter__container h3,
-.filter__container h4,
-.filter__container label {
-  margin-bottom: 10px;
-}
-
-.button__container button, .login__container button {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  padding: 10px 20px;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  width: 15rem;
-  margin: auto;
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
 }
 
 .manga__detail__description {
@@ -216,6 +154,16 @@ body {
 }
 .manga__detail__description p {
   padding-bottom: 20px;
+  color: #DEDEDE;
+}
+.manga__detail__description .checked {
+  color: #ffde00;
+}
+.manga__detail__description .manga__title {
+  font-size: 2.8rem;
+}
+.manga__detail__description .price__tag {
+  font-size: 2.3rem;
 }
 
 .item__container .item__image img {
@@ -298,6 +246,68 @@ footer h4 {
   justify-content: center;
   align-items: center;
   flex: border-box;
+}
+
+.item__container {
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .item__container {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.login__container {
+  margin-top: 25vh;
+}
+
+.forum__container input {
+  width: 15rem;
+  color: #000000;
+}
+
+.filters select {
+  width: 15rem;
+  color: #000000;
+}
+.filters label {
+  width: 50px;
+  display: inline-block;
+}
+
+.filter__container button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.filter__container h3,
+.filter__container h4,
+.filter__container label {
+  margin-bottom: 10px;
+}
+
+.button__container button, .login__container button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  width: 15rem;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

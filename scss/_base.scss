@@ -10,7 +10,8 @@ $font-sf-display-pro: SF Display Pro;
 
 // Fonts size
 $font-lg: 3.5rem;
-$font-md: 2.5rem;
+$font-md-pls: 2.8rem;
+$font-md: 2.3rem;
 $font-sm: 1.50rem;
 $font-sxm: 1rem;
 
@@ -76,4 +77,9 @@ $font-sxm: 1rem;
 @mixin scaleImage() {
   max-width: 100%;
   height: auto;
+}
+
+@mixin centerItemsForScala() {
+  justify-content: center;
+  flex-direction: column;
 }
