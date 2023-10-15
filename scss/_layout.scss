@@ -155,12 +155,14 @@ body {
 .forum__container {
   input {
     @include componentSize();
+    @include inputStyling();
   }
 }
 
 .filters {
   select {
     @include componentSize();
+    @include inputStyling();
   }
 
   label {
@@ -223,6 +225,8 @@ body {
 }
 
 footer {
+  display: flex;
+  justify-content: space-around;
   h4 {
     font-size: $font-sxm;
     display: flex;

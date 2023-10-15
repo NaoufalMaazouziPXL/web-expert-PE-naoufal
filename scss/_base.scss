@@ -65,13 +65,12 @@ $font-sxm: 1rem;
   display: inline-block;
 }
 
-
 @mixin componentSize() {
   width: 15rem;
 }
 
 @mixin inputStyling() {
-
+  color: $color-black;
 }
 
 @mixin scaleImage() {
